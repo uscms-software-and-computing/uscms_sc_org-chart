@@ -1,0 +1,195 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    color: #333333;
+}
+
+#chart-container {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    height: 420px;
+    width: calc(100% - 24px);
+    border: 2px dashed #aaa;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: center;
+}
+
+.orgchart .node .title {
+    width: unset;
+    min-width: 130px;
+}
+
+
+#US\ CMS\ Software\ \&\ Computing .title {
+    width: 250px;
+    background-color: rgb(19 61 66)
+}
+
+#US\ CMS\ Software\ \&\ Computing .content {
+    border-color: rgb(19 61 66)
+}
+
+#Facilities .title {
+    background-color: darkred;
+}
+
+.orgchart div[data-parent="Facilities"] .title{
+    background-color: red;
+}
+
+#Software .title {
+    background-color: navy;
+}
+
+.orgchart div[data-parent="Software"] .title{
+    background-color: blue;
+}
+
+.orgchart div[class^="node 2.1."] .title {
+    background-color: #8080ff;
+}
+
+.orgchart div[class^="node 2.2."] .title {
+    background-color: #8080ff;
+}
+
+#Operations .title {
+    background-color: darkgreen;
+}
+.orgchart div[data-parent="Operations"] .title {
+    background-color: green;
+}
+
+#HL-LHC\ R\&D .title {
+    background-color: purple;
+}
+.orgchart div[data-parent="HL-LHC R&D"] .title {
+    background-color: fuchsia;
+}
+
+.orgchart div[class^="node 4.1."] .title {
+    background-color: #ff80ff;
+}
+
+.orgchart div[class^="node 4.2."] .title {
+    background-color: #ff80ff;
+}
+
+.orgchart div[class^="node 4.3."] .title {
+    background-color: #ff80ff;
+}
+
+#Program .title {
+    background-color: #ffa600;
+}
+
+.orgchart div[data-parent="Program"] .title {
+    background-color: #ffb833;
+}
+
+#Facilities .content {
+    border-color: darkred;
+}
+
+.orgchart div[data-parent="Facilities"] .content{
+    border-color: red;
+}
+
+#Software .content {
+    border-color: navy;
+}
+
+.orgchart div[data-parent="Software"] .content{
+    border-color: blue;
+}
+
+.orgchart div[class^="node 2.1."] .content {
+    border-color: #8080ff;
+}
+
+.orgchart div[class^="node 2.2."] .content {
+    border-color: #8080ff;
+}
+
+#Operations .content {
+    border-color: darkgreen;
+}
+.orgchart div[data-parent="Operations"] .content {
+    border-color: green;
+}
+
+#HL-LHC\ R\&D .content {
+    border-color: purple;
+}
+.orgchart div[data-parent="HL-LHC R&D"] .content {
+    border-color: fuchsia;
+}
+
+.orgchart div[class^="node 4.1."] .content {
+    border-color: #ff80ff;
+}
+
+.orgchart div[class^="node 4.2."] .content {
+    border-color: #ff80ff;
+}
+
+.orgchart div[class^="node 4.3."] .content {
+    border-color: #ff80ff;
+}
+
+#Program .content {
+    border-color: #ffa600;
+}
+
+.orgchart div[data-parent="Program"] .content {
+    border-color: #ffb833;
+}
+
+
+/*.orgchart .top-level .title {*/
+/*    background-color: #006699;*/
+/*}*/
+/*.orgchart .top-level .content {*/
+/*    border-color: #006699;*/
+/*}*/
+
+.orgchart .lines .topLine {
+    border-top: 2px solid black;
+}
+
+.orgchart .lines .rightLine {
+    border-right: 1px solid black;
+    float: none;
+    border-radius: 0;
+}
+
+.orgchart .lines .leftLine {
+    border-left: 1px solid black;
+    float: none;
+    border-radius: 0;
+}
+
+.orgchart .lines .downLine {
+    background-color: black;
+    margin: 0 auto;
+    height: 20px;
+    width: 2px;
+    float: none;
+}
+
+.orgchart .verticalNodes>td::before {
+    border-color: black;
+}
+
+.orgchart .verticalNodes ul>li::before, .orgchart .verticalNodes ul>li::after {
+    border-color: black;
+}
