@@ -74,7 +74,7 @@
         var root = [];
 
         var flat = myData.map(node => {
-            return {'id': node[0], 'name': node[0], 'parentId': node[1], 'wbsNo': node[2]}
+            return {'id': node[0], 'name': 'WBS ' + node [2] + ' ' + node[0], 'parentId': node[1], 'wbsNo': node[2]}
         });
 
         flat.forEach(node => {
