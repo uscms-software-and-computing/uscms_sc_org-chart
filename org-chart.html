@@ -81,6 +81,7 @@
             // No parentId means top level
             if (!node.parentId) {
                 node['className'] = 'top-level';
+                node['name'] = node.id;
                 return root.push(node);
             }
             // Insert node as child of parent in flat array
